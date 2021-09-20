@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="38dp"
+    tools:context=".ProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="8dp">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/profile_image"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_centerHorizontal="true"
+               app:civ_border_width="2dp"
+               android:layout_marginTop="40dp"
+               app:civ_border_color="#FF000000"/>
+
+           <TextView
+               android:id="@+id/name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/profile_image"
+               android:layout_marginTop="30dp"
+               tools:text="name"
+               android:layout_centerHorizontal="true"
+               android:textSize="20sp"/>
+
+           <TextView
+               android:id="@+id/email"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/name"
+               android:layout_marginTop="30dp"
+               tools:text="email id"
+               android:layout_centerHorizontal="true"
+               android:layout_marginBottom="40dp"
+               android:textSize="20sp"/>
+
+       </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/facebook_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/fb_button"
+        android:drawableStart="@drawable/facebook_icon"
+        android:drawablePadding="5dp"
+        android:padding="16dp"
+        android:text="Log out with Facebook"
+        android:translationZ="3dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:elevation="5dp"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/google_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/gm_button"
+        android:drawableStart="@drawable/google_icon"
+        android:drawablePadding="5dp"
+        android:padding="18dp"
+        android:text="Log out with google"
+        android:translationZ="3dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:elevation="5dp" />
+
+
+</RelativeLayout>
